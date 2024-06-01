@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creating a CSS class</title>
+    <style>
+      body {
+        background-color: lightblue;
+      }
+      @media (max-width: 600px) {
+        body {
+          background-color: lightcoral;
+        }
+      }
+
+      .highlight {
+        color: red;
+      }
+
+      p {
+        padding: 20px;
+      }
+
+      img {
+        margin: 15px;
+        border: 10px solid red;
+        padding: 30px;
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+      }
+      nav ul li {
+        padding: 12px;
+        border: 2px solid greenyellow;
+        border-radius: 10px;
+        margin: 4px;
+      }
+
+      form input[type="text"],
+      form input[type="number"],
+      form input[type="email"] {
+        width: 20%;
+        margin: 5px 0;
+      }
+
+      table {
+        width: 50%;
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 18px;
+        text-align: left;
+      }
+      th,
+      td {
+        padding: 12px;
+        border-bottom: 1px solid #ddd;
+      }
+      th {
+        background-color: #f2f2f2;
+        color: black;
+      }
+      tr:hover {
+        background-color: #f5f5f5;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>HTML</li>
+        <li class="highlight">CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    </nav>
+
+    <div>
+      <p>
+        This is a paragraph with 20 pixels of padding. The padding creates space
+        inside the paragraph, making it look less cramped.
+      </p>
+
+      <img src="https://via.placeholder.com/200" alt="Sample Image" />
+    </div>
+
+    <!-- Creating a Simple Form -->
+    <form action="">
+      <label for="name">Name:</label>
+      <input type="text" name="name" /><br /><br />
+      <label for="">Contact Number: </label>
+      <input type="number" /><br /><br />
+      <label for="email">Email: </label>
+      <input type="email" />
+      <input type="submit" />
+    </form>
+
+    <!-- Creating a Table -->
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Contact</th>
+      </tr>
+      <tr>
+        <td>Gyana</td>
+        <td>20</td>
+        <td>0987654321</td>
+      </tr>
+      <tr>
+        <td>Omm</td>
+        <td>19</td>
+        <td>1234567890</td>
+      </tr>
+    </table>
+  </body>
+</html>
